@@ -1,0 +1,94 @@
+body {
+    background-color: aliceblue;
+}
+
+/*index.html*/
+
+#titleContainer {
+    text-align: center;
+    font-size: 35px;
+}
+
+#searchContainer {
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Style the search field */
+
+form.searchForm input[type=text] {
+    padding: 10px;
+    border: 1px solid grey;
+    background: #f1f1f1;
+}
+
+/* Style the submit button */
+
+form.searchForm button {
+    width: 10%;
+    padding: 10px;
+    background: green;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.searchForm button:hover {
+    background: darkgreen;
+}
+
+[data-validation-message] {
+    display: none;
+}
+
+[data-validation-message].message-visible {
+    display: block;
+}
+
+/*result.html*/
+
+#resultTitle {
+    padding-top: 2%;
+    font-size: 40px;
+}
+
+.resultList {
+    border: 1px solid green;
+    font-size: 25px;
+    margin: 1%;
+}
+
+.resultContainer {
+    padding: 2%;
+    border-bottom: #0b7dda solid 1px;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+    padding: 1%;
+    border-bottom: greenyellow solid 1px;
+}
+
+.card-body{
+    padding-left:2%;
+}
+
+#resultHome{
+    text-align: center;
+    font-size:20px;
+}
+
+#pagination-demo{
+    display: inline-block;
+    margin-bottom: 1em;
+    padding-left: 35%;
+}
+  
+#pagination-demo li{
+    display: inline-block;
+}
+  
