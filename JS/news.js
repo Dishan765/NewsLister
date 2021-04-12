@@ -1,6 +1,6 @@
 /*API DETAILS */
 const APIkey = "33e74bdaa2d3071adcc35ef05c5c31e0";
-const URL = 'http://api.mediastack.com/v1/news';
+const URL = 'https://cors-anywhere.herokuapp.com/http://api.mediastack.com/v1/news';
 
 
 /*GRAB SEARCH TEXT */
