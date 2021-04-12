@@ -18,16 +18,17 @@ if (cards === null || cards.length <=0) {
 }
 else {
     //DISPLAY 10 ARTICLES PER PAGE
+    let articlesPerPage = 5;
     $('#pagination-demo').twbsPagination({
-        totalPages:Math.round(cards.length/10),
+        totalPages:Math.round(cards.length/articlesPerPage),
         visiblePages: 6,
         next: 'Next',
         prev: 'Prev',
         onPageClick: function (event, page) {
             document.querySelector(".resultList").innerHTML ="";
-            var grandTotal = 10*page;
+            var grandTotal = articlesPerPage*page;
 
-            for(var i = grandTotal-10;i<grandTotal;i++){
+            for(var i = grandTotal-articlesPerPage;i<grandTotal;i++){
                 document.querySelector(".resultList").innerHTML += cards[i];
             }
 

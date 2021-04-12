@@ -1,6 +1,6 @@
 /*API DETAILS */
 const APIkey = "";
-const URL = 'https://cors-anywhere.herokuapp.com/http://api.mediastack.com/v1/news';
+const URL = 'http://api.mediastack.com/v1/news';
 
 
 /*GRAB SEARCH TEXT */
@@ -10,6 +10,8 @@ form.addEventListener("submit", retrieve_articles);
 
 /* RETRIEVE ARTICLES FROM API */
 function retrieve_articles(e) {
+    document.querySelector(".loader").removeAttribute('id');
+
     var inputElementValue;
 
     e.preventDefault();// PREVENT DEFAULT POST METHOD
@@ -22,7 +24,7 @@ function retrieve_articles(e) {
             languages: 'en',
             countries: 'au,us,gb,nz',
             keywords: inputElementValue,
-            limit: 50,
+            limit: 20,
             offset: 0,
             sort:'popularity'
         }
@@ -30,7 +32,6 @@ function retrieve_articles(e) {
         articles = data.data;
 
         storeData(articles,inputElementValue);
-
     });
     
 }
