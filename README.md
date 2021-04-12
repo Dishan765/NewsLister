@@ -2,7 +2,7 @@
 
 A web application listing news about a search term using the mediastack API to get news.
 
-Tools: HTML, CSS, JavaScript, mediastack API
+Tools used: HTML, CSS, JavaScript, mediastack API
 
 # What I Learned?
 
