@@ -1,5 +1,5 @@
 /*API DETAILS */
-const APIkey = "";
+const APIkey = "cbb6b02ba134366812ff9bc7a2e61a92";
 const URL = 'http://api.mediastack.com/v1/news';
 
 
